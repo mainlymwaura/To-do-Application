@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  text-align: center;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  margin: 0;
+ border-radius: 0cm;
+}
+/* Button Hover Effects */
+.add-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.edit-btn:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.save-btn:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+
+.cancel-btn:hover {
+  background-color: #7f8c8d;
+  transform: scale(1.05);
+}
+
+/* Task Item Hover Effect */
+.task:not(.done):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Input Field Hover */
+.task-input:hover {
+  border-color: #3498db;
+}
+
+/* Checkbox Hover */
+.task-checkbox:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Filter Options Hover */
+.filter-label:not(.active):hover {
+  background-color: #ecf0f1;
+  color: #3498db;
+}
+
+/* Smooth Transitions for All Interactive Elements */
+button, input[type="checkbox"], .task, .filter-label {
+  transition: all 0.2s ease;
+}
+
